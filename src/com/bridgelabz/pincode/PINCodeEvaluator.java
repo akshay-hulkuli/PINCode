@@ -20,6 +20,7 @@ public class PINCodeEvaluator {
 		
 		if(pinCodeChecker(pincode))System.out.println("It is a valid pincode");
 		else System.out.println("It is an invalid pincode");
+
 		sc.close();
 
 	}
