@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 public class PINCodeEvaluator {
 	
 	public static boolean pinCodeChecker(String pincode) {
-		Pattern pattern = Pattern.compile("[0-9]{6}");
+		Pattern pattern = Pattern.compile("^[0-9]{6}");
 		Matcher matcher = pattern.matcher(pincode);
 		return matcher.matches();
 	}
