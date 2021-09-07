@@ -16,10 +16,11 @@ public class PINCodeEvaluator {
 		
 		System.out.println("PINCode Evaluator \nenter a pin code");
 		Scanner sc = new Scanner(System.in);
-		String pincode = sc.next();
+		String pincode = sc.nextLine();
 		
 		if(pinCodeChecker(pincode))System.out.println("It is a valid pincode");
 		else System.out.println("It is an invalid pincode");
+		sc.close();
 
 	}
 
